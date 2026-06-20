@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mini Craque 3D | Crie seu bonequinho personalizado da Seleção</title>
+<meta name="description" content="Transforme sua foto em um bonequinho 3D personalizado com tema da seleção brasileira. Veja o passo a passo com IA, modelagem e impressão 3D.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Mini Craque 3D | Crie seu bonequinho personalizado da Seleção">
+<meta property="og:description" content="Transforme sua foto em um bonequinho 3D colecionável da Seleção Brasileira. IA + impressão 3D em 5 passos.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ NOISE / SCANLINE OVERLAY ============ -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <div class="logo-slot">
+      <span class="logo-bracket">[</span><span class="logo-text">SEU LOGO AQUI</span><span class="logo-bracket">]</span>
+    </div>
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="#como-criar">Como funciona</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#faq">Perguntas</a>
+    </nav>
+    <a href="#hero" class="btn btn-header">Criar agora</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <video
+      class="hero-video"
+      autoplay muted loop playsinline
+      poster="assets/img/hero-poster.jpg"
+      aria-hidden="true">
+      <source src="assets/video/hero-bg.webm" type="video/webm">
+      <source src="assets/video/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-scrim"></div>
+    <div class="hero-scanlines" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+  </div>
+
+  <div class="stadium-glow stadium-glow--left" aria-hidden="true"></div>
+  <div class="stadium-glow stadium-glow--right" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow eyebrow--hero">
+      <span class="dot-live" aria-hidden="true"></span>
+      Mini Craque 3D &middot; Edição Copa
+    </p>
+
+    <h1 class="hero-title">
+      Transforme-se no seu<br>
+      <span class="hero-title-accent">Mini Craque 3D</span><br>
+      da Seleção <span class="flag-emoji">🇧🇷</span>
+    </h1>
+
+    <p class="hero-subtitle">Sua foto. Sua história. Seu bonequinho colecionável.</p>
+
+    <p class="hero-support">
+      Crie uma versão em miniatura sua com a camisa da Seleção Brasileira, transforme em modelo 3D
+      com inteligência artificial e prepare o arquivo para imprimir o seu próprio boneco.
+    </p>
+
+    <p class="hero-impact">Do torcedor <span class="impact-arrow">para</span> o colecionador.</p>
+
+    <div class="hero-actions">
+      <a href="#como-criar" class="btn btn-primary btn-lg">
+        <span>Criar meu Mini Craque agora</span>
+        <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#intro" class="btn btn-ghost btn-lg">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7L8 5z" fill="currentColor"/></svg>
+        <span>Ver como funciona</span>
+      </a>
+    </div>
+
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. INTRODUÇÃO ============ -->
+<section class="intro" id="intro">
+  <div class="container container--narrow">
+    <p class="eyebrow">Como tudo começa</p>
+    <h2 class="section-title">A experiência começa<br>em uma <em>foto</em>.</h2>
+
+    <div class="intro-grid">
+      <div class="intro-text">
+        <p class="lead">
+          Você não precisa saber modelar em 3D. A inteligência artificial faz o trabalho pesado.
+        </p>
+        <p>
+          Em poucos passos você transforma uma simples foto em um bonequinho colecionável estilo
+          <em>bobblehead</em>, com todos os detalhes que fazem ele ser <strong>seu</strong>:
+        </p>
+      </div>
+
+      <ul class="intro-checklist">
+        <li><span class="check-icon">✓</span> Seu rosto</li>
+        <li><span class="check-icon">✓</span> Seu cabelo</li>
+        <li><span class="check-icon">✓</span> Seus acessórios</li>
+        <li><span class="check-icon">✓</span> Sua camisa da Seleção</li>
+        <li><span class="check-icon">✓</span> Sua base personalizada, com seu nome</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. COMO CRIAR ============ -->
+<section class="steps" id="como-criar">
+  <div class="container">
+    <div class="steps-heading">
+      <p class="eyebrow">O passo a passo</p>
+      <h2 class="section-title">Como criar o seu<br><em>Mini Craque</em></h2>
+      <p class="steps-intro-text">5 etapas. Nenhuma exige experiência prévia. Vamos lá.</p>
+    </div>
+
+    <div class="steps-track">
+
+      <!-- STEP 01 -->
+      <article class="step-card" id="passo-01" data-step="01">
+        <div class="step-card-inner">
+          <div class="step-frame" aria-hidden="true">
+            <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+            <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+          </div>
+
+          <div class="step-head">
+            <span class="step-number">01</span>
+            <div>
+              <h3 class="step-title">Gere a imagem do seu boneco com IA <span class="step-emoji">🤖</span></h3>
+              <p class="step-tool-tag">Ferramenta: Google Gemini</p>
+            </div>
+          </div>
+
+          <p class="step-text">
+            Tudo começa com uma foto sua. Use o Google Gemini para criar uma versão hiper-realista
+            do seu bonequinho personalizado &mdash; com cara, cabelo e estilo de craque.
+          </p>
+
+          <ul class="step-requirements">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 7h16v13H4z" stroke="currentColor" stroke-width="1.8"/><path d="M9 7l1.5-3h3L15 7" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="3.2" stroke="currentColor" stroke-width="1.8"/></svg> Uma foto de referência</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 19h16M6 16l9-9 3 3-9 9H6v-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg> Seu nome, para a base</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> Acesso ao Google Gemini</li>
+          </ul>
+
+          <a href="https://gemini.google.com/" target="_blank" rel="noopener" class="btn btn-primary btn-step">
+            Gerar meu boneco no Gemini<span class="sr-only"> (abre o Google Gemini em nova aba)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <div class="prompt-block">
+            <div class="prompt-block-header">
+              <span class="prompt-dot"></span><span class="prompt-dot"></span><span class="prompt-dot"></span>
+              <span class="prompt-label">prompt-mini-craque.txt</span>
+              <button class="copy-btn" type="button" data-copy-target="prompt-gemini">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="11" height="11" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 15V5a2 2 0 012-2h10" stroke="currentColor" stroke-width="1.8"/></svg>
+                <span class="copy-btn-label">Copiar prompt</span>
+              </button>
+            </div>
+            <pre class="prompt-text" id="prompt-gemini">Primeiro, peça-me uma foto minha e também o meu nome. Depois, crie uma fotografia de estúdio hiper-realista de uma boneca colecionável em miniatura personalizada. A foto de referência é a fonte absoluta da verdade, portanto, preserve as feições, o tom de pele, o cabelo e os acessórios com precisão forense.
+
+Regras:
+(1) O nome da boneca é o nome que eu lhe informar, que deve aparecer gravado em branco na base de duas camadas.
+(2) Mantenha total fidelidade à identidade da pessoa na foto, sem homogeneizar as feições.
+(3) Preserve o cabelo exatamente como na referência, sem alisar cabelos cacheados ou crespos.
+(4) A densidade da barba e do bigode deve corresponder exatamente à referência; nunca adicione pelos faciais que não existam na foto.
+(5) Se a pessoa usa óculos, chapéu ou brincos na foto, mantenha esses acessórios; caso contrário, não os adicione.
+(6) Vista a boneca com o uniforme oficial da CBF: camisa amarela, shorts azuis e meias brancas.
+(7) O estilo do boneco deve ser um clássico boneco de cabeça oscilante esportivo.
+(8) O pescoço deve ser curto e grosso, sem mola ou espiral.
+(9) Posicione a figura com um pé apoiado em uma bola de futebol que está na base.
+(10) A superfície da base deve ser grama fosca, sem reflexo.
+(11) O fundo deve mostrar um estádio de futebol desfocado durante a hora dourada.
+
+Formato:
+4:5 retrato.</pre>
+          </div>
+        </div>
+      </article>
+
+      <!-- connector -->
+      <div class="step-connector" aria-hidden="true"><span></span></div>
+
+      <!-- STEP 02 -->
+      <article class="step-card" id="passo-02" data-step="02">
+        <div class="step-card-inner">
+          <div class="step-frame" aria-hidden="true">
+            <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+            <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+          </div>
+
+          <div class="step-head">
+            <span class="step-number">02</span>
+            <div>
+              <h3 class="step-title">Prepare a imagem para virar 3D <span class="step-emoji">✂️</span></h3>
+              <p class="step-tool-tag">Ferramenta: Craiyon Background Remover</p>
+            </div>
+          </div>
+
+          <p class="step-text">
+            Agora precisamos remover o fundo da imagem. Isso ajuda a inteligência artificial de
+            modelagem a entender exatamente onde está o seu personagem.
+          </p>
+
+          <ol class="step-mini-list">
+            <li>Envie sua imagem</li>
+            <li>Remova o fundo</li>
+            <li>Baixe a imagem transparente</li>
+            <li>Siga para o próximo passo</li>
+          </ol>
+
+          <a href="https://www.craiyon.com/en/background-remover" target="_blank" rel="noopener" class="btn btn-primary btn-step">
+            Remover fundo da imagem<span class="sr-only"> (abre o Craiyon em nova aba)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <div class="step-connector" aria-hidden="true"><span></span></div>
+
+      <!-- STEP 03 -->
+      <article class="step-card" id="passo-03" data-step="03">
+        <div class="step-card-inner">
+          <div class="step-frame" aria-hidden="true">
+            <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+            <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+          </div>
+
+          <div class="step-head">
+            <span class="step-number">03</span>
+            <div>
+              <h3 class="step-title">Transforme em modelo 3D <span class="step-emoji">🧊</span></h3>
+              <p class="step-tool-tag">Ferramenta: Tripo3D</p>
+            </div>
+          </div>
+
+          <p class="step-text">
+            Agora vem a parte mágica. A IA transforma seu bonequinho 2D em uma peça tridimensional
+            pronta para impressão.
+          </p>
+
+          <div class="step-config">
+            <div class="step-config-row"><span>Estilo</span><strong>Personagem colecionável</strong></div>
+            <div class="step-config-row"><span>Qualidade</span><strong>Alta</strong></div>
+            <div class="step-config-row"><span>Modelo</span><strong>Sólido</strong></div>
+            <div class="step-config-row"><span>Opção</span><strong>HD Model</strong></div>
+          </div>
+
+          <p class="step-result">Resultado: seu Mini Craque ganha volume, detalhes e formato pronto para impressão.</p>
+
+          <a href="https://studio.tripo3d.ai/" target="_blank" rel="noopener" class="btn btn-primary btn-step">
+            Criar meu modelo 3D<span class="sr-only"> (abre o Tripo3D em nova aba)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <div class="step-connector" aria-hidden="true"><span></span></div>
+
+      <!-- STEP 04 -->
+      <article class="step-card" id="passo-04" data-step="04">
+        <div class="step-card-inner">
+          <div class="step-frame" aria-hidden="true">
+            <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+            <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+          </div>
+
+          <div class="step-head">
+            <span class="step-number">04</span>
+            <div>
+              <h3 class="step-title">Baixe o arquivo 3D para sua máquina <span class="step-emoji">💻</span></h3>
+              <p class="step-tool-tag">Ferramenta: 3D Model Downloader (extensão Chrome)</p>
+            </div>
+          </div>
+
+          <p class="step-text">
+            O Tripo3D gera o modelo, mas você ainda precisa baixar o arquivo. Use a extensão de
+            Chrome para extrair o arquivo <strong>OBJ</strong> do modelo criado.
+          </p>
+
+          <ol class="step-mini-list">
+            <li>Instale a extensão no Chrome</li>
+            <li>Abra seu modelo no Tripo3D</li>
+            <li>Baixe o arquivo OBJ</li>
+          </ol>
+
+          <a href="https://chromewebstore.google.com/detail/gbdaimhoibipdfjcejfnhjiiipglfolf" target="_blank" rel="noopener" class="btn btn-primary btn-step">
+            Baixar extensão<span class="sr-only"> (abre a Chrome Web Store em nova aba)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <div class="step-connector" aria-hidden="true"><span></span></div>
+
+      <!-- STEP 05 -->
+      <article class="step-card" id="passo-05" data-step="05">
+        <div class="step-card-inner">
+          <div class="step-frame" aria-hidden="true">
+            <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+            <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+          </div>
+
+          <div class="step-head">
+            <span class="step-number">05</span>
+            <div>
+              <h3 class="step-title">Converta para impressão 3D <span class="step-emoji">🖨️</span></h3>
+              <p class="step-tool-tag">Ferramenta: Meshy AI Converter</p>
+            </div>
+          </div>
+
+          <p class="step-text">
+            Agora transforme seu arquivo OBJ em STL. Esse é o formato padrão usado pela maioria
+            das impressoras 3D do mercado.
+          </p>
+
+          <div class="step-conversion">
+            <span class="conv-tag">OBJ</span>
+            <svg width="22" height="14" viewBox="0 0 24 14" fill="none"><path d="M1 7h20M15 1l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="conv-tag conv-tag--accent">STL</span>
+          </div>
+
+          <p class="step-result">Pronto. Seu arquivo está preparado para impressão.</p>
+
+          <a href="https://www.meshy.ai/pt-BR/3d-tools/file-converter/obj/to/stl" target="_blank" rel="noopener" class="btn btn-primary btn-step">
+            Converter meu arquivo<span class="sr-only"> (abre o Meshy AI em nova aba)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. RESULTADO FINAL ============ -->
+<section class="result" id="resultado">
+  <div class="result-bg" aria-hidden="true"></div>
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Chegou a hora</p>
+    <h2 class="section-title section-title--light">Seu Mini Craque<br>está <em>pronto!</em> <span class="trophy">🏆</span></h2>
+    <p class="result-open-text">Agora você tem duas possibilidades:</p>
+
+    <div class="result-options">
+      <div class="result-card">
+        <span class="result-icon">🖨️</span>
+        <span class="result-option-tag">Opção 1</span>
+        <h3>Imprimir em 3D</h3>
+        <p>Envie seu arquivo STL para uma impressora 3D. Você pode criar:</p>
+        <ul>
+          <li>Bonequinho de mesa</li>
+          <li>Peça colecionável</li>
+          <li>Presente personalizado</li>
+          <li>Lembrança de Copa</li>
+          <li>Item para torcedores</li>
+        </ul>
+      </div>
+
+      <div class="result-card">
+        <span class="result-icon">🎨</span>
+        <span class="result-option-tag">Opção 2</span>
+        <h3>Pintar seu próprio craque</h3>
+        <p>Nem toda impressora 3D imprime colorido. Mas isso pode deixar a experiência ainda mais divertida. Imprima em branco e transforme em:</p>
+        <ul>
+          <li>Pintura personalizada</li>
+          <li>Atividade em família</li>
+          <li>Coleção de jogadores</li>
+          <li>Decoração temática</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="result-footer-note">Quer pular o processo manual? Você também pode <strong>contratar a impressão pronta</strong> e receber seu Mini Craque em casa.</p>
+  </div>
+</section>
+
+<!-- ============ 5. VIRAL / COMPARTILHÁVEL ============ -->
+<section class="viral">
+  <div class="container container--narrow">
+    <p class="eyebrow">A brincadeira não para em você</p>
+    <h2 class="section-title">Crie sua própria<br><em>seleção</em></h2>
+
+    <div class="viral-counter">
+      <div class="viral-counter-item">
+        <span class="viral-number">11</span>
+        <span class="viral-label">amigos</span>
+      </div>
+      <span class="viral-plus">+</span>
+      <div class="viral-counter-item">
+        <span class="viral-number">11</span>
+        <span class="viral-label">bonequinhos</span>
+      </div>
+      <span class="viral-equals">=</span>
+      <div class="viral-counter-item viral-counter-item--accent">
+        <span class="viral-number-text">1 seleção<br>inteira sua</span>
+      </div>
+    </div>
+
+    <p class="viral-subtext">Do torcedor comum&hellip; para uma peça única que existe só para você.</p>
+    <p class="viral-experience-name">Mini Craque Experience</p>
+  </div>
+</section>
+
+<!-- ============ 6. GALERIA ============ -->
+<section class="gallery" id="galeria">
+  <div class="container">
+    <p class="eyebrow">Inspiração</p>
+    <h2 class="section-title">Veja alguns Mini Craques<br>criados pela <em>comunidade</em></h2>
+
+    <div class="gallery-grid">
+      <div class="gallery-card gallery-card--featured">
+        <img src="assets/img/hero-poster.jpg" alt="Mini Craque 3D personalizado, bonequinho colecionável com camisa da Seleção Brasileira em base com nome gravado" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="gallery-tag">Torcedor brasileiro</span>
+        </div>
+      </div>
+      <div class="gallery-card gallery-card--placeholder">
+        <div class="placeholder-content">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M4 7h16v13H4z" stroke="currentColor" stroke-width="1.6"/><path d="M9 7l1.5-3h3L15 7" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="gallery-card-overlay">
+          <span class="gallery-tag">Pai e filho</span>
+        </div>
+      </div>
+      <div class="gallery-card gallery-card--placeholder">
+        <div class="placeholder-content">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M4 7h16v13H4z" stroke="currentColor" stroke-width="1.6"/><path d="M9 7l1.5-3h3L15 7" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="gallery-card-overlay">
+          <span class="gallery-tag">Casal campeão</span>
+        </div>
+      </div>
+      <div class="gallery-card gallery-card--placeholder">
+        <div class="placeholder-content">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M4 7h16v13H4z" stroke="currentColor" stroke-width="1.6"/><path d="M9 7l1.5-3h3L15 7" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="gallery-card-overlay">
+          <span class="gallery-tag">Time de amigos</span>
+        </div>
+      </div>
+      <div class="gallery-card gallery-card--placeholder">
+        <div class="placeholder-content">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M4 7h16v13H4z" stroke="currentColor" stroke-width="1.6"/><path d="M9 7l1.5-3h3L15 7" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="gallery-card-overlay">
+          <span class="gallery-tag">Coleção personalizada</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container container--narrow">
+    <p class="eyebrow">Tira-dúvidas</p>
+    <h2 class="section-title">Perguntas<br><em>frequentes</em></h2>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>
+          <span>Preciso entender de IA ou modelagem 3D?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p>Não. O processo foi criado para qualquer pessoa conseguir criar seu personagem, do zero.</p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>Preciso ter uma impressora 3D?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p>Não. Você pode gerar o arquivo e enviar para uma empresa especializada em impressão 3D.</p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>Qual formato preciso para imprimir?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p>O formato mais utilizado é o STL &mdash; é para ele que convertemos seu arquivo no passo 5.</p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>Posso fazer com qualquer camisa?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p>Sim. A experiência pode ser personalizada para diferentes seleções, times e estilos.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. CTA FINAL ============ -->
+<section class="cta-final">
+  <div class="cta-final-bg" aria-hidden="true"></div>
+  <div class="container container--narrow">
+    <h2 class="cta-final-title">Seu próximo craque<br>pode ser <em>você</em>.</h2>
+    <p class="cta-final-steps">Crie. Modele. Imprima.</p>
+    <p class="cta-final-text">Transforme sua paixão pelo futebol em uma peça única.</p>
+    <a href="#como-criar" class="btn btn-primary btn-xl">
+      Criar meu Mini Craque 3D
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 9. RODAPÉ ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-logo-slot">
+      <span class="logo-bracket">[</span><span class="logo-text">LOGO</span><span class="logo-bracket">]</span>
+    </div>
+    <p class="footer-tagline">Uma experiência criada com inteligência artificial + impressão 3D.</p>
+
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="#como-criar">Criar meu boneco</a>
+      <a href="#como-criar">Ferramentas utilizadas</a>
+      <a href="#" class="footer-contact">Contato</a>
+      <a href="#" class="footer-contact">Instagram</a>
+    </nav>
+
+    <p class="footer-copy">Mini Craque 3D &mdash; experiência não-oficial de torcedores. Não possui vínculo com a CBF ou FIFA.</p>
+  </div>
+</footer>
+
+<!-- toast -->
+<div class="toast" id="copyToast" role="status" aria-live="polite">Prompt copiado!</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
